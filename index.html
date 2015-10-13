@@ -1,202 +1,635 @@
-#+OPTIONS: toc:nil H:10 tex:t num:nil author:nil date:nil
-#+STARTUP: hidestars indent
-#+INCLUDE: personal-info.org
-#+LateX_HEADER: \usepackage{resume}
-#+LateX_HEADER: \hypersetup{hidelinks}
-#+LateX_CLASS_OPTIONS: [letterpaper]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Samuel B. Johnson, Ph.D.</title>
+<!-- 2015-10-13 Tue 07:36 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
-#+TITLE:{{{FULL}}}
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
 
-| {{{ADDRESS}}} | {{{PHONE}}} | {{{EMAIL}}} |
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
-* SUMMARY
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Samuel B. Johnson, Ph.D.</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">Houston, TX</td>
+<td class="right">631.944.2665</td>
+<td class="left">samuel.johnson.jobs@gmail.com</td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">SUMMARY</h2>
+<div class="outline-text-2" id="text-1">
+<p>
 A computational scientist and engineering developer primarily focused on algorithm and software development for the numerical solution of differential-algebraic equations, ordinary differential equations, partial differential equations, and linear and nonlinear algebraic equations pertaining to models of physical and industrial processes, especially those involving fluid dynamics, coupled fluid-structure interactions and  heat transfer. 
-
-* EMPLOYMENT HISTORY
-
-** [[http://www.halliburton.com][Halliburton Engineering Services, Inc.]]
-
-| *Technical Advisor*                | Production Enhancement | 2012-2015 |
-| *Principal Technical Professional* | Production Enhancement | 2010-2012 |
-
-- Development and implementation of algorithms for the automatic classification and index reduction of systems of differential-algebraic equations based on a graph-theoretic analysis of the system's structure via a modification of Pantelides' algorithm.
-
-- Development of a template library for automatic differentiation of physical models using dual arithmetic.
-
-- Development and implementation of a high-performance computing framework for the simulation of disparate but tightly coupled physical models using non-causal or semi-causal, canonical (residual based) model formulations that allows the complete decoupling of the specification and development of individual physical model components as well as the complete decoupling of the solver from the model resulting in a dramatic reduction in the development time and cost of simulation tools.
-
-- Development of physical models for the numerical simulation of complex physical systems related to hydraulic fracturing and other production enhancement processes.
-
-- Generation of best practices recommendations for the development of scientific computing and computer aid engineering software, and participated in the organization and execution of third-party reviews to improve the integrity of the organizations scientific computing software.
-
-- Generation of process recommendations for improving the programming skills and quality of inexperienced computational scientists and engineers in an environment with insufficient experienced professionals for effective mentoring.
-
-- Algorithmic and programming optimization of existing models and solvers resulting and multiple orders of magnitude reduction in computational time and memory requirements.
-
-** [[http://www.cd-adapco.com/][Analysis and Design Applications Company (CD-adapco)]]
-| *Lead Engineer*   | Engineering Services | 2007-2010 |
-| *Senior Engineer* | Engineering Services | 2006-2007 |
-
-- Consulting services in the area of thermal and fluid analysis of engineering systems for the automotive, marine, nuclear, and oil & gas industries using CD-adapco's state-of-the-art software, and high performance compute clusters.
-
-- Integrated customer's in-house software and third party software with CD-adapco's state of the art solvers.
-
-- Developed custom purpose-built numerical models.
-
-** [[http://ucdavis.edu/][University of California, Davis]]
-| *Postdoctoral Researcher* | Center for Computational Science and Engineering | 2005-2006 |
-| *Lecturer*                | Mechanical and Aerospace Engineering Department  | 2005-2006 |
-
-- Conducted research regarding the numerical simulation of multiphase fluid flow with applications in materials processing, fire suppression and contagion spreading.
-
-- Supervised graduate and undergraduate research.
-
-- Taught introductory courses in thermodynamics and fluid dynamics.
-
-** [[http://www.lanl.gov][Los Alamos National Laboratory]]
-
-| *Graduate Research Assistant* | Computational and Computer Science Division  2000-2001 |
-
-- Worked with a team on the development of a large-scale multi-physics solver for the numerical simulation of casting process.
-
-- Conducted research targeting the elimination of grid induced anisotropy.
-
-- Conducted research targeting the reduction of numerically induced spurious currents related to the numerical treatment of fluid interfaces.
-
-** [[https://www.mines.edu][Colorado School of Mines]]
-| *Graduate Research Fellow* | Center for Combustion and Environmental Research | 1999-2005 |
-
-- Creation of analytical and numerical models in support of the development of a spray based strip casting process in partnership with the University of California, Irvine and the Idaho National Laboratory, including two and three-dimensional interfacial flow solvers with heat transfer and phase change (solidification), an analytical model for oblique droplet impact, a Lagrangian spray model, and molecular dynamics simulation for the investigation of contact line dynamics.
-
-* Computing Experience
-** Programming Languages
-
-- *Native Languages* - C++, Fortran (77 and modern standards), C
-
-- *Functional Languages* - Scheme (R5RS, R6RS), Common Lisp, Clojure, Haskell (basic working knowledge only)
-
-- *Object Oriented Languages* - Java (basic working knowledge only), C# (basic working knowledge only)
-
-- *Prototyping Languages* - Julia, Python, MatLab/Octave, Mathematica
-
-** HPC Frameworks/Libraries
-
-- OpenCl
-- MPI
-- OpenMP
-- POSIX Threads
-
-** Operating Systems
-
-- Windows 2000, Windows 7, Windows 8
-- Linux (many distributions)
-- Irix
-- BSD (limited experience)
-- OSX
-
-* EDUCATION
-
-  *Relevant course work* - Numerical Methods, Numerical Solution of PDEs, Computational Linear Algebra, Finite Element Methods, Computational Fluid Dynamics, Finite Element Methods, Parallel Computing, Discrete Element Methods, Atomistic Simulation, Advanced Modeling and Simulation, Statistical Methods, Multiphase Flows, Combustion, Surface Chemistry, Physical Gas Dynamics, Fluid Mechanics (Introductory, Intermediate and Advanced), Heat Transfer, Thermodynamics (Introductory and Advanced), Solidification
-
-** Colorado School of Mines, Golden, CO
-
-- Degree -  *Ph.D.* in Engineering System
-- Specialty - Thermo-fluid systems
-- Minor - Computer Science and Applied Mathematics 
-- Year - 2005
-- Dissertation - Droplet Splash, Spread and Bounce
-- GPA - 4.0
-
-** Colorado School of Mines, Golden, CO
-
-- Degree - *M.Sc.* in Engineering Systems | 2001 |
-- Specialty - Thermo-fluid systems
-- Thesis - Modeling and Numerical Simulation of Droplet Spreading and Solidification after  Impingement on a Cold Substrate
-- GPA - 4.0
-
-** Colorado School of Mines, Golden, Co
-
-- Degree - *B.Sc.*  Engineering
-- Specialty - Mechanical
-- Year - 1999
-- GPA - 3.3
-
-* PUBLICATIONS
-
-** BOOK CHAPTERS AND ARTICLES
-
-1. J-P Delplanque, S. B. Johnson, L. L. Shaw, and Y. Zhou, Spray Deposition and coating processes, in _CRC Materials Processing Handbook_ (section on Microstructure change processes), Eds. J. R. Groza, E. J. Lavernia, and J. F. Shackelford, CRC, 2006.
-
-** REFEREED ARCHIVAL PUBLICATIONS
-
-2. K. M. McHugh, Y. Lin, Y. Zhou, S. B. Johnson, J.-P. Delplanque, and E. J. Lavernia, /Microstructure Treatment of 2124 Al/, Materials Science and Engineering A, Vol. 447, pp. 26-34, 2008.
-
-1. K. M. McHugh, J-P Delplanque, S. B. Johnson, E. J. Lavernia, Y. Zhou, and Y. Lin, /Spray Rolling Aluminum Alloy Strip/, Materials Science and Engineering A, Vol. 383, pp. 96- 106, 2004.
-
-** CONFERENCE PAPERS AND PRESENTATIONS
-
-22. S. B. Johnson and J.-P. Delplanque, /Seeking an Optimum Droplet Size Distribution for Water-Mist Fire Suppression/, Paper #07F-44. 2007 Fall meeting of the Western States Sections of the Combustion Institute, Livermore, CA, October 16 & 17, 2007. 
-
-21. S. B. Johnson and J.-P. Delplanque, /Estimating Interface Curvature for Volume of Fluid Methods/, Euromech 479, Sheveningen, Netherlands, August 2006. 
-
-20. S. B. Johnson and J.-P. Delplanque, /Numerical Simulation of Parameters Influencing Droplet Rebound/, ILASS Americas 19th Annual Conference on Liquid Atomization and Spray Systems, Toronto, ON, Canada, May 2006. 
-
-19. B. Chacon, S. B. Johnson and J.-P. Delplanque, /Modeling Droplet Spreading on a Solid Substrate from First Contact through Recoil with an Energy Conservation Model/, ILASS Americas 19 Annual Conference on Liquid Atomization and Spray Systems, Toronto, ON, Canada, May 2006. 
-
-18. S. B. Johnson and J.-P. Delplanque, /Resolving Droplet Splashing with Adaptive Mesh Refinement and Accurate Curvature Estimation/, DFD05 58th Annual Meeting Annual Meeting of the American Physical Society Division of Fluid Dynamics, November 20-22, 2005, Chicago, IL (submitted). 
-
-17. S. B. Johnson and J.-P. Delplanque, /Analyzing the Results of Droplet Impact Simulation by Volume of Fluid Methods: Physics or Numerical Errors?/ ILASS Americas 18th Annual Conference on Liquid Atomization and Spray Systems, Irvine, CA, May 2005. 
-
-16. A. B. Oliver, S. B. Johnson, J.-P. Delplanque and C. S. Lengsfeld, /Two Fluid VOF Simulation of Droplet Impact on a Liquid Pool/, ILASS Americas 18th Annual Conference on Liquid Atomization and Spray Systems, Irvine, CA, May 2005. 
-
-15. S. B. Johnson, J-P. Delplanque, Y. Lin, Y. Zhou, E. J. Lavernia and K. M. McHugh /Numerical simulation and experimental characterization of a binary aluminum alloy spray - application to the spray rolling process/, in EPD Congress 2005 - Proceedings of Sessions and Symposia Sponsored by the Extraction and Processing Division of The Minerals, Metals and Materials Society. 2005 TMS Annual Meeting. San Francisco, CA, USA. 13-17 Feb. 2005., pp. 509-517 (2005). 
-
-14. K. M. McHugh, Y. Lin, Y. Zhou, E. J. Lavernia, J.-P. Delplanque and S. B. Johnson, /Spray rolling aluminum strip for transportation applications/, in MPMD Sixth Global Innovations Proceedings. Trends in Materials and Manufacturing Technologies for Transportation Industries and Powder Metallurgy Research and Development in the Transportation Industry. Proceedings of Symposium Sponsored by the Materials Processing & Manufacturing Division of TMS. 2005 TMS Annual Meeting. San Francisco, CA, USA. 13-17 Feb. 2005. 
-
-13. S. B. Johnson, J.-P. Delplanque and M. Bussmann, /Modeling and Simulation of Metal Droplet Impact, Spreading, and Solidification on a Solid Substrate/, Euromech 450: Studies on Splashes a century after A. M. Worthington, Marseille, France, October 27-29, 2004. 
-
-12. S. B. Johnson, S. J. Lewis and J.-P. Delplanque, /Droplet-Resolved Dilute Spray Evaporation Model/, 2004 Heat Transfer/Fluids Engineering Summer Conference, Charlotte, North Carolina, USA, July 11-15, 2004. 
-
-11. K. M. McHugh, E. J. Lavernia, Y. Zhou, Y. Line, J.-P. Delplanque and S. B. Johnson, /Aluminum Strip Processing by Spray Rolling/, Proceedings of the Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 6.27-6.38, 2003. 
-
-10. Y. Lin, Y. Zhou, S. B. Johnson, J.-P. Delplanque, K. M. McHugh and E. J. Lavernia, /On the Selection of Processing Parameters during Spray Rolling Process/, Proceedings of the  Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 7.17-7.30, 2003.
-
-9. S. B. Johnson, J.-P. Delplanque, Y. Lin, Y. Zhou, E. J. Lavernia and K. M. McHugh, /Assisting Spray Rolling Process Development and Scale-up with Modeling and Numerical Simulation/, Proceedings of the Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 6.3-6.14, 2003. 
- 
-8. S. B. Johnson, J.-P. Delplanque, E. J. Lavernia, Y. Lin, Y. Zhou and K. M. McHugh, /Spray Rolling: A Novel Technique for the Production of Aluminum Strip/, Proceedings of ILASS Americas, 16th Annual Conference on Liquid Atomization and Spray Systems, Monterey, California, May 18-21, 2003. 
-
-7. K. M. McHugh, E. J. Lavernia, Y. Zhou, Y. Lin, J.-P. Delplanque and S. B. Johnson, /Spray Rolling Aluminum Strip--Process Development and Strip Properties/, Symposium on Hot Deformation of Aluminum Alloys, 132nd Annual Meeting & Exhibition of TMS, San Diego, California, March 2-6, 2003. 
-
-6. S. B. Johnson, J.-P. Delplanque, E. J. Lavernia, Y. Zhou, Y. Lin and K. M. McHugh, /Spray Rolling Aluminum Strip: Process Modeling and Parametric Studies/, Symposium on Hot Deformation of Aluminum Alloys, 132nd Annual Meeting & Exhibition of TMS, San Diego, California, March 2-6, 2003. 
-
-5. S. B. Johnson and J.-P. Delplanque, /Simulation Needs in the Modeling of Droplet-Based Processes: The case of spray-rolling/, Presented at the Los Alamos National Laboratory Telluride Workshop, Santa Fe, NM, January 21-23, 2003. 
-
-4. J.-P. Delplanque and S. B. Johnson, Y. Lin, Y. Zhou, N. Yang, K. M. McHugh and E. J. Lavernia, /Using CFD Simulations to Improve Spray-Based Materials Processes/, 2002 International Conference on Process Modeling in Powder Metallurgy & Particulate Materials, October 28-29, 2002, Newport Beach, California .
-
-3. S. B. Johnson, Y. Lin, Y. Zhou, J.-P. Delplanque, K. M. McHugh, and E. J. Lavernia, /Modeling and Simulation of the Spray Rolling Process/, 2002 International Conference on Process Modeling in Powder Metallurgy & Particulate Materials, October 28-29, 2002, Newport Beach, California. 
-
-2. S. B. Johnson and J.-P. Delplanque, /Modeling the Spray-Rolling Process: from droplets to spray/, 39th Annual Technical Meeting of the Society of Engineering Science, Penn State University, PA, October 13-16th, 2002. 
-
-1. S. B. Johnson and J.-P. Delplanque, /Micro-Scale Aspects of Spray Deposition Processing: A semi-Analytical Model for Droplet Spreading and Solidification at Off-Normal Impact Angles/, 2000 ASME IMECE, November 5-10, 2000 Orlando, FL, session on Transport Phenomena in Spray and Coating Processes HTD-Vol. 366-3, Proceedings of the ASME Heat Transfer Division, Vol. 3, pp. 381-271-388, ASME 2000. 
-
-** Other Publications
-
-2. S. B. Johnson, _Droplet Spread, Rebound and Splash_, Ph. D. Dissertation, Colorado School of Mines, Engineering Division, 2005.
-
-1. S. B. Johnson, _Modeling and Numerical Simulation of Droplet Spreading and Solidification after Impinging on a Solid Substrate_, Master of Science Thesis, Colorado School of Mines, Engineering Division, 2005.
-
-** Patents
-
-1. S. Madasu and Samuel B. Johnson. /Evaluating Fluid Flow in a Wellbore/. Halliburton Energy Services, Inc., assignee. Patent US 20130346035 A1. 26 Dec. 2013.
-
-
-** Pending Patent Applications
-
-4. S. B. Johnson, A. Lin, D. M. Copeland. /Preconditioning a Global Model of a Subterranean Region/. Halliburton Energy Services, Inc., assignee. Application 14/144/113, 30 Dec. 2013. 
-
-3. S. B. Johnson, A. Lin, D. M. Copeland. /Preconditioning Distinct Subsystem Models in a Subterranean Region Model/, Halliburton Energy Services, Inc., assignee. Application 14/144,129, 30 Dec. 2013.
-
-2. J. Bai, S. B. Johnson, H.G. Walters. /Modeling Subterranean Rock Blocks In An Injection Treatment Simulation/, Halliburton Energy Services, Inc., assignee.  Application 13/757,306, 1 Feb. 2013.
-   
-1.  S. B. Johnson, H. G. Walters. /Simulating an Injection Treatment of a Subterranean Zone/, Halliburton Energy Services, Inc., assignee. Application 13/757,052, 1 Feb. 2013. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">EMPLOYMENT HISTORY</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><a href="http://www.halliburton.com">Halliburton Engineering Services, Inc.</a></h3>
+<div class="outline-text-3" id="text-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><b>Technical Advisor</b></td>
+<td class="left">Production Enhancement</td>
+<td class="right">2012-2015</td>
+</tr>
+
+<tr>
+<td class="left"><b>Principal Technical Professional</b></td>
+<td class="left">Production Enhancement</td>
+<td class="right">2010-2012</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Development and implementation of algorithms for the automatic classification and index reduction of systems of differential-algebraic equations based on a graph-theoretic analysis of the system's structure via a modification of Pantelides' algorithm.
+</li>
+
+<li>Development of a template library for automatic differentiation of physical models using dual arithmetic.
+</li>
+
+<li>Development and implementation of a high-performance computing framework for the simulation of disparate but tightly coupled physical models using non-causal or semi-causal, canonical (residual based) model formulations that allows the complete decoupling of the specification and development of individual physical model components as well as the complete decoupling of the solver from the model resulting in a dramatic reduction in the development time and cost of simulation tools.
+</li>
+
+<li>Development of physical models for the numerical simulation of complex physical systems related to hydraulic fracturing and other production enhancement processes.
+</li>
+
+<li>Generation of best practices recommendations for the development of scientific computing and computer aid engineering software, and participated in the organization and execution of third-party reviews to improve the integrity of the organizations scientific computing software.
+</li>
+
+<li>Generation of process recommendations for improving the programming skills and quality of inexperienced computational scientists and engineers in an environment with insufficient experienced professionals for effective mentoring.
+</li>
+
+<li>Algorithmic and programming optimization of existing models and solvers resulting and multiple orders of magnitude reduction in computational time and memory requirements.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><a href="http://www.cd-adapco.com/">Analysis and Design Applications Company (CD-adapco)</a></h3>
+<div class="outline-text-3" id="text-2-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><b>Lead Engineer</b></td>
+<td class="left">Engineering Services</td>
+<td class="right">2007-2010</td>
+</tr>
+
+<tr>
+<td class="left"><b>Senior Engineer</b></td>
+<td class="left">Engineering Services</td>
+<td class="right">2006-2007</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Consulting services in the area of thermal and fluid analysis of engineering systems for the automotive, marine, nuclear, and oil &amp; gas industries using CD-adapco's state-of-the-art software, and high performance compute clusters.
+</li>
+
+<li>Integrated customer's in-house software and third party software with CD-adapco's state of the art solvers.
+</li>
+
+<li>Developed custom purpose-built numerical models.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><a href="http://ucdavis.edu/">University of California, Davis</a></h3>
+<div class="outline-text-3" id="text-2-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><b>Postdoctoral Researcher</b></td>
+<td class="left">Center for Computational Science and Engineering</td>
+<td class="right">2005-2006</td>
+</tr>
+
+<tr>
+<td class="left"><b>Lecturer</b></td>
+<td class="left">Mechanical and Aerospace Engineering Department</td>
+<td class="right">2005-2006</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Conducted research regarding the numerical simulation of multiphase fluid flow with applications in materials processing, fire suppression and contagion spreading.
+</li>
+
+<li>Supervised graduate and undergraduate research.
+</li>
+
+<li>Taught introductory courses in thermodynamics and fluid dynamics.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><a href="http://www.lanl.gov">Los Alamos National Laboratory</a></h3>
+<div class="outline-text-3" id="text-2-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><b>Graduate Research Assistant</b></td>
+<td class="left">Computational and Computer Science Division  2000-2001</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Worked with a team on the development of a large-scale multi-physics solver for the numerical simulation of casting process.
+</li>
+
+<li>Conducted research targeting the elimination of grid induced anisotropy.
+</li>
+
+<li>Conducted research targeting the reduction of numerically induced spurious currents related to the numerical treatment of fluid interfaces.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><a href="https://www.mines.edu">Colorado School of Mines</a></h3>
+<div class="outline-text-3" id="text-2-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><b>Graduate Research Fellow</b></td>
+<td class="left">Center for Combustion and Environmental Research</td>
+<td class="right">1999-2005</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Creation of analytical and numerical models in support of the development of a spray based strip casting process in partnership with the University of California, Irvine and the Idaho National Laboratory, including two and three-dimensional interfacial flow solvers with heat transfer and phase change (solidification), an analytical model for oblique droplet impact, a Lagrangian spray model, and molecular dynamics simulation for the investigation of contact line dynamics.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Computing Experience</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Programming Languages</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li><b>Native Languages</b> - C++, Fortran (77 and modern standards), C
+</li>
+
+<li><b>Functional Languages</b> - Scheme (R5RS, R6RS), Common Lisp, Clojure, Haskell (basic working knowledge only)
+</li>
+
+<li><b>Object Oriented Languages</b> - Java (basic working knowledge only), C# (basic working knowledge only)
+</li>
+
+<li><b>Prototyping Languages</b> - Julia, Python, MatLab/Octave, Mathematica
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">HPC Frameworks/Libraries</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>OpenCl
+</li>
+<li>MPI
+</li>
+<li>OpenMP
+</li>
+<li>POSIX Threads
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Operating Systems</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Windows 2000, Windows 7, Windows 8
+</li>
+<li>Linux (many distributions)
+</li>
+<li>Irix
+</li>
+<li>BSD (limited experience)
+</li>
+<li>OSX
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">EDUCATION</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<b>Relevant course work</b> - Numerical Methods, Numerical Solution of PDEs, Computational Linear Algebra, Finite Element Methods, Computational Fluid Dynamics, Finite Element Methods, Parallel Computing, Discrete Element Methods, Atomistic Simulation, Advanced Modeling and Simulation, Statistical Methods, Multiphase Flows, Combustion, Surface Chemistry, Physical Gas Dynamics, Fluid Mechanics (Introductory, Intermediate and Advanced), Heat Transfer, Thermodynamics (Introductory and Advanced), Solidification
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Colorado School of Mines, Golden, CO</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>Degree -  <b>Ph.D.</b> in Engineering System
+</li>
+<li>Specialty - Thermo-fluid systems
+</li>
+<li>Minor - Computer Science and Applied Mathematics 
+</li>
+<li>Year - 2005
+</li>
+<li>Dissertation - Droplet Splash, Spread and Bounce
+</li>
+<li>GPA - 4.0
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">Colorado School of Mines, Golden, CO</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>Degree - <b>M.Sc.</b> in Engineering Systems | 2001 |
+</li>
+<li>Specialty - Thermo-fluid systems
+</li>
+<li>Thesis - Modeling and Numerical Simulation of Droplet Spreading and Solidification after  Impingement on a Cold Substrate
+</li>
+<li>GPA - 4.0
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">Colorado School of Mines, Golden, Co</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>Degree - <b>B.Sc.</b>  Engineering
+</li>
+<li>Specialty - Mechanical
+</li>
+<li>Year - 1999
+</li>
+<li>GPA - 3.3
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">PUBLICATIONS</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">BOOK CHAPTERS AND ARTICLES</h3>
+<div class="outline-text-3" id="text-5-1">
+<ol class="org-ol">
+<li>J-P Delplanque, S. B. Johnson, L. L. Shaw, and Y. Zhou, Spray Deposition and coating processes, in <span class="underline">CRC Materials Processing Handbook</span> (section on Microstructure change processes), Eds. J. R. Groza, E. J. Lavernia, and J. F. Shackelford, CRC, 2006.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2">REFEREED ARCHIVAL PUBLICATIONS</h3>
+<div class="outline-text-3" id="text-5-2">
+<ol class="org-ol">
+<li>K. M. McHugh, Y. Lin, Y. Zhou, S. B. Johnson, J.-P. Delplanque, and E. J. Lavernia, <i>Microstructure Treatment of 2124 Al</i>, Materials Science and Engineering A, Vol. 447, pp. 26-34, 2008.
+</li>
+
+<li>K. M. McHugh, J-P Delplanque, S. B. Johnson, E. J. Lavernia, Y. Zhou, and Y. Lin, <i>Spray Rolling Aluminum Alloy Strip</i>, Materials Science and Engineering A, Vol. 383, pp. 96- 106, 2004.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3">CONFERENCE PAPERS AND PRESENTATIONS</h3>
+<div class="outline-text-3" id="text-5-3">
+<ol class="org-ol">
+<li>S. B. Johnson and J.-P. Delplanque, <i>Seeking an Optimum Droplet Size Distribution for Water-Mist Fire Suppression</i>, Paper #07F-44. 2007 Fall meeting of the Western States Sections of the Combustion Institute, Livermore, CA, October 16 &amp; 17, 2007. 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Estimating Interface Curvature for Volume of Fluid Methods</i>, Euromech 479, Sheveningen, Netherlands, August 2006. 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Numerical Simulation of Parameters Influencing Droplet Rebound</i>, ILASS Americas 19th Annual Conference on Liquid Atomization and Spray Systems, Toronto, ON, Canada, May 2006. 
+</li>
+
+<li>B. Chacon, S. B. Johnson and J.-P. Delplanque, <i>Modeling Droplet Spreading on a Solid Substrate from First Contact through Recoil with an Energy Conservation Model</i>, ILASS Americas 19 Annual Conference on Liquid Atomization and Spray Systems, Toronto, ON, Canada, May 2006. 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Resolving Droplet Splashing with Adaptive Mesh Refinement and Accurate Curvature Estimation</i>, DFD05 58th Annual Meeting Annual Meeting of the American Physical Society Division of Fluid Dynamics, November 20-22, 2005, Chicago, IL (submitted). 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Analyzing the Results of Droplet Impact Simulation by Volume of Fluid Methods: Physics or Numerical Errors?</i> ILASS Americas 18th Annual Conference on Liquid Atomization and Spray Systems, Irvine, CA, May 2005. 
+</li>
+
+<li>A. B. Oliver, S. B. Johnson, J.-P. Delplanque and C. S. Lengsfeld, <i>Two Fluid VOF Simulation of Droplet Impact on a Liquid Pool</i>, ILASS Americas 18th Annual Conference on Liquid Atomization and Spray Systems, Irvine, CA, May 2005. 
+</li>
+
+<li>S. B. Johnson, J-P. Delplanque, Y. Lin, Y. Zhou, E. J. Lavernia and K. M. McHugh <i>Numerical simulation and experimental characterization of a binary aluminum alloy spray - application to the spray rolling process</i>, in EPD Congress 2005 - Proceedings of Sessions and Symposia Sponsored by the Extraction and Processing Division of The Minerals, Metals and Materials Society. 2005 TMS Annual Meeting. San Francisco, CA, USA. 13-17 Feb. 2005., pp. 509-517 (2005). 
+</li>
+
+<li>K. M. McHugh, Y. Lin, Y. Zhou, E. J. Lavernia, J.-P. Delplanque and S. B. Johnson, <i>Spray rolling aluminum strip for transportation applications</i>, in MPMD Sixth Global Innovations Proceedings. Trends in Materials and Manufacturing Technologies for Transportation Industries and Powder Metallurgy Research and Development in the Transportation Industry. Proceedings of Symposium Sponsored by the Materials Processing &amp; Manufacturing Division of TMS. 2005 TMS Annual Meeting. San Francisco, CA, USA. 13-17 Feb. 2005. 
+</li>
+
+<li>S. B. Johnson, J.-P. Delplanque and M. Bussmann, <i>Modeling and Simulation of Metal Droplet Impact, Spreading, and Solidification on a Solid Substrate</i>, Euromech 450: Studies on Splashes a century after A. M. Worthington, Marseille, France, October 27-29, 2004. 
+</li>
+
+<li>S. B. Johnson, S. J. Lewis and J.-P. Delplanque, <i>Droplet-Resolved Dilute Spray Evaporation Model</i>, 2004 Heat Transfer/Fluids Engineering Summer Conference, Charlotte, North Carolina, USA, July 11-15, 2004. 
+</li>
+
+<li>K. M. McHugh, E. J. Lavernia, Y. Zhou, Y. Line, J.-P. Delplanque and S. B. Johnson, <i>Aluminum Strip Processing by Spray Rolling</i>, Proceedings of the Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 6.27-6.38, 2003. 
+</li>
+
+<li>Y. Lin, Y. Zhou, S. B. Johnson, J.-P. Delplanque, K. M. McHugh and E. J. Lavernia, <i>On the Selection of Processing Parameters during Spray Rolling Process</i>, Proceedings of the  Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 7.17-7.30, 2003.
+</li>
+
+<li>S. B. Johnson, J.-P. Delplanque, Y. Lin, Y. Zhou, E. J. Lavernia and K. M. McHugh, <i>Assisting Spray Rolling Process Development and Scale-up with Modeling and Numerical Simulation</i>, Proceedings of the Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 6.3-6.14, 2003. 
+</li>
+
+<li>S. B. Johnson, J.-P. Delplanque, E. J. Lavernia, Y. Lin, Y. Zhou and K. M. McHugh, <i>Spray Rolling: A Novel Technique for the Production of Aluminum Strip</i>, Proceedings of ILASS Americas, 16th Annual Conference on Liquid Atomization and Spray Systems, Monterey, California, May 18-21, 2003. 
+</li>
+
+<li>K. M. McHugh, E. J. Lavernia, Y. Zhou, Y. Lin, J.-P. Delplanque and S. B. Johnson, <i>Spray Rolling Aluminum Strip&#x2013;Process Development and Strip Properties</i>, Symposium on Hot Deformation of Aluminum Alloys, 132nd Annual Meeting &amp; Exhibition of TMS, San Diego, California, March 2-6, 2003. 
+</li>
+
+<li>S. B. Johnson, J.-P. Delplanque, E. J. Lavernia, Y. Zhou, Y. Lin and K. M. McHugh, <i>Spray Rolling Aluminum Strip: Process Modeling and Parametric Studies</i>, Symposium on Hot Deformation of Aluminum Alloys, 132nd Annual Meeting &amp; Exhibition of TMS, San Diego, California, March 2-6, 2003. 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Simulation Needs in the Modeling of Droplet-Based Processes: The case of spray-rolling</i>, Presented at the Los Alamos National Laboratory Telluride Workshop, Santa Fe, NM, January 21-23, 2003. 
+</li>
+
+<li>J.-P. Delplanque and S. B. Johnson, Y. Lin, Y. Zhou, N. Yang, K. M. McHugh and E. J. Lavernia, <i>Using CFD Simulations to Improve Spray-Based Materials Processes</i>, 2002 International Conference on Process Modeling in Powder Metallurgy &amp; Particulate Materials, October 28-29, 2002, Newport Beach, California .
+</li>
+
+<li>S. B. Johnson, Y. Lin, Y. Zhou, J.-P. Delplanque, K. M. McHugh, and E. J. Lavernia, <i>Modeling and Simulation of the Spray Rolling Process</i>, 2002 International Conference on Process Modeling in Powder Metallurgy &amp; Particulate Materials, October 28-29, 2002, Newport Beach, California. 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Modeling the Spray-Rolling Process: from droplets to spray</i>, 39th Annual Technical Meeting of the Society of Engineering Science, Penn State University, PA, October 13-16th, 2002. 
+</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Micro-Scale Aspects of Spray Deposition Processing: A semi-Analytical Model for Droplet Spreading and Solidification at Off-Normal Impact Angles</i>, 2000 ASME IMECE, November 5-10, 2000 Orlando, FL, session on Transport Phenomena in Spray and Coating Processes HTD-Vol. 366-3, Proceedings of the ASME Heat Transfer Division, Vol. 3, pp. 381-271-388, ASME 2000. 
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4">Other Publications</h3>
+<div class="outline-text-3" id="text-5-4">
+<ol class="org-ol">
+<li>S. B. Johnson, <span class="underline">Droplet Spread, Rebound and Splash</span>, Ph. D. Dissertation, Colorado School of Mines, Engineering Division, 2005.
+</li>
+
+<li>S. B. Johnson, <span class="underline">Modeling and Numerical Simulation of Droplet Spreading and Solidification after Impinging on a Solid Substrate</span>, Master of Science Thesis, Colorado School of Mines, Engineering Division, 2005.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5">Patents</h3>
+<div class="outline-text-3" id="text-5-5">
+<ol class="org-ol">
+<li>S. Madasu and Samuel B. Johnson. <i>Evaluating Fluid Flow in a Wellbore</i>. Halliburton Energy Services, Inc., assignee. Patent US 20130346035 A1. 26 Dec. 2013.
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5-6" class="outline-3">
+<h3 id="sec-5-6">Pending Patent Applications</h3>
+<div class="outline-text-3" id="text-5-6">
+<ol class="org-ol">
+<li>S. B. Johnson, A. Lin, D. M. Copeland. <i>Preconditioning a Global Model of a Subterranean Region</i>. Halliburton Energy Services, Inc., assignee. Application 14/144/113, 30 Dec. 2013. 
+</li>
+
+<li>S. B. Johnson, A. Lin, D. M. Copeland. <i>Preconditioning Distinct Subsystem Models in a Subterranean Region Model</i>, Halliburton Energy Services, Inc., assignee. Application 14/144,129, 30 Dec. 2013.
+</li>
+
+<li>J. Bai, S. B. Johnson, H.G. Walters. <i>Modeling Subterranean Rock Blocks In An Injection Treatment Simulation</i>, Halliburton Energy Services, Inc., assignee.  Application 13/757,306, 1 Feb. 2013.
+</li>
+
+<li>S. B. Johnson, H. G. Walters. <i>Simulating an Injection Treatment of a Subterranean Zone</i>, Halliburton Energy Services, Inc., assignee. Application 13/757,052, 1 Feb. 2013. 
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2015-10-13 Tue 07:36</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
