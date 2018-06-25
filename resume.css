@@ -1,4 +1,4 @@
-body { font-family: monospace; color: #a0a0a0; width: 7.5in; padding: 0.5in; border: 1px solid black; }
+body { font-family: monospace; color: #0f0f0f; width: 7.5in; padding: 0.5in; border: 1px solid black; }
 .title  { text-align: center; }
 .todo   { font-family: monospace; color: red; }
 .done   { color: green; }
