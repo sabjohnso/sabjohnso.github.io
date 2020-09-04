@@ -1,10 +1,10 @@
-body { font-family: monospace; color: #0f0f0f; width: 7.5in; padding: 0.5in; border: 1px solid black; }
+body { font-family: monospace; color: #555555; width: 7.5in; padding: 0.5in; border: 1px solid black; }
 .title  { text-align: center; }
 .todo   { font-family: monospace; color: red; }
 .done   { color: green; }
 .tag    { background-color: #eee; font-family: monospace;
           padding: 2px; font-size: 80%; font-weight: normal; }
-.timestamp { color: #bebebe; }
+.timestamp { color: #000000; }
 .timestamp-kwd { color: #5f9ea0; }
 .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
 .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
@@ -13,7 +13,7 @@ body { font-family: monospace; color: #0f0f0f; width: 7.5in; padding: 0.5in; bor
 #postamble p, #preamble p { font-size: 90%; margin: .2em; }
 p.verse { margin-left: 3%; }
 pre {
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
@@ -61,7 +61,7 @@ dt { font-weight: bold; }
 .figure p { text-align: center; }
 .inlinetask {
     padding: 10px;
-    border: 2px solid gray;
+    border: 2px solid #000000;
     margin: 10px;
     background: #ffffcc;
 }
