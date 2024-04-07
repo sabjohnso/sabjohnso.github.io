@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-04-07 Sun 09:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Samuel B. Johnson, Ph.D.</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="resume.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Samuel B. Johnson, Ph.D.</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Houston, TX</td>
+<td class="org-right">631.944.2665</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-org5eddaa9" class="outline-2">
+<h2 id="org5eddaa9">Professional Summary</h2>
+<div class="outline-text-2" id="text-org5eddaa9">
+<p>
+As a seasoned software developer and computational scientist, I
+specialize in developing performance-critical software for
+low-latency, high-performance, and high-throughput applications. With
+decades of experience working on both sides of the research and software
+development divide, I possess a distinctive capability to tackle complex
+challenges that traverse these domains. My expertise is particularly
+deep in numerical analysis, a fundamental component of such
+problems. This unique blend of skills enables me to effectively
+address issues on either side of the research-development spectrum,
+ensuring robust and innovative solutions.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11d5498" class="outline-2">
+<h2 id="org11d5498">Work History</h2>
+<div class="outline-text-2" id="text-org11d5498">
+</div>
+<div id="outline-container-org116388a" class="outline-3">
+<h3 id="org116388a"><a href="https://www.quantlab.com">Quantlab</a></h3>
+<div class="outline-text-3" id="text-org116388a">
+<p>
+During my employment at Quantlab, I have have been a part of several
+teams.  Most recently, as part of the Core Research team I integrated
+multiple machine learning frameworks and libraries into Quantlab's
+next generation trading/research platform and demonstrated the direct
+research-to-production capabilities of the platform with several deep
+learning models for limit order books.
+</p>
+
+<p>
+As part of the Futures Engineering/Alpha Recon team, I reworked
+the model engine of Quantlab's next generation trading and research
+platform to improve correctness and consistency of the calculations
+and to improve the visibility of the calculations for performance
+optimization and for research verifiability of the calculations.
+</p>
+
+<p>
+I also implemented a library supporting the <code>Executor</code> protocol from
+Python's  <code>concurrent.futures</code> library to offload data sampling,
+fitting and simulation work, where more than hundreds of thousands of
+simulation are often submitted as a single <code>map</code> call by the executor,
+and I optimized data loading for the model fitting processes, reducing
+the overall time for model fitting to a third of its original time
+with peak read rates of over 600 GB/s.
+</p>
+
+<p>
+As part of the Flex-Dev team I implemented low-latency C++ feed handlers
+including feed handlers for multiple US equity exchanges and
+adapters to retrofit modern feed handlers to the legacy model engine
+and feed to alpha transducers.
+</p>
+
+<p>
+As part of the HPC/Edge-Dev team, I implementation of data
+aggregation and processing pipelines with Python and C++. Design and
+implementation of an application for the isomorphic transformation
+of binary protocol specifications in two in-house DSLs and an
+equivalent representation in JSON (implemented with <a href="https://racket-lang.org/">Racket</a>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbdcb432" class="outline-3">
+<h3 id="orgbdcb432"><a href="https://www.exxonmobil.com">ExxonMobil</a></h3>
+<div class="outline-text-3" id="text-orgbdcb432">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Computational Fluids Scientist</b></td>
+<td class="org-left">Upstream Integrated Solutions</td>
+<td class="org-right">2020-2021</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Andvanced HPC Developer</b></td>
+<td class="org-left">High Performance Computing</td>
+<td class="org-right">2016-2019</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Design and implementation of a modeling and simulation abstraction system and
+declarative DSL for PDEs or stencil calculations using <a href="https://clang.llvm.org/">Clang/LLVM</a>
+and <a href="https://racket-lang.org/">Racket</a>.</li>
+
+<li>Development of a C++ reflection library for the automatic binding of
+C++ code with Python and Matlab.</li>
+
+<li>Software development for simulating turbidity currents related to
+process stratigraphy.</li>
+
+<li>Development of a novel vectorization strategy that eliminates the
+contention between vectorization and data locality.</li>
+
+<li>Analysis and optimization of in-house seismic imaging and inversion
+software.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e9f92f" class="outline-3">
+<h3 id="org4e9f92f"><a href="http://www.halliburton.com">Halliburton Energy Services, Inc</a></h3>
+<div class="outline-text-3" id="text-org4e9f92f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Technical Advisor</b></td>
+<td class="org-left">Advanced Computational Science</td>
+<td class="org-right">2015</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Technical Advisor</b></td>
+<td class="org-left">Software Architecture &amp; Design Team</td>
+<td class="org-right">2012-2014</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Principal Technical Professional</b></td>
+<td class="org-left">Engineering Modeling and Simulation</td>
+<td class="org-right">2010-2012</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Design and implementation of a high-performance computing framework
+for the simulation of disparate but tightly coupled physics that
+decouples individual model components from each other and the system
+solver to reduce development costs and improve the maintainability
+of the software.</li>
+
+<li>Development of mathematical models for the numerical simulation of
+complex physical systems related to hydraulic fracturing and other
+production enhancement processes.</li>
+
+<li>Development and implementation of algorithms for the automatic
+classification and index reduction of systems of
+differential-algebraic equations based on a graph-theoretic analysis
+of the system's structure via a modification of Pantelides'
+algorithm.</li>
+
+<li>Development of a template library for automatic differentiation of
+physical models using dual arithmetic.</li>
+
+<li>Algorithmic and programming optimization of existing models and
+solvers resulting and multiple orders of magnitude reduction in
+computational time and memory requirements.</li>
+
+<li>Generation of best practices recommendations for the development of
+scientific computing and computer aid engineering software, and
+participated in the organization and execution of third-party
+reviews to improve the integrity of the organizations scientific
+computing software.</li>
+
+<li>Generation of process recommendations for improving the programming
+skills and quality of inexperienced computational scientists and
+engineers in an environment with insufficient experienced
+professionals for effective mentoring.</li>
+
+<li>Text mining and natural language processing in support of data
+analytics for well stimulation effectiveness analysis.</li>
+
+<li>Waterfall and Agile software development.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcde7c5b" class="outline-3">
+<h3 id="orgcde7c5b"><a href="http://www.cd-adapco.com/">Analysis and Design Applications Company (CD-adapco)</a></h3>
+<div class="outline-text-3" id="text-orgcde7c5b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Lead Engineer</b></td>
+<td class="org-left">Engineering Services</td>
+<td class="org-right">2007-2010</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Senior Engineer</b></td>
+<td class="org-left">Engineering Services</td>
+<td class="org-right">2006-2007</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Consulting services in the area of thermal and fluid analysis of
+engineering systems for the automotive, marine, nuclear, and oil &amp;
+gas industries using CD-adapco's state-of-the-art software, and high
+performance compute clusters.</li>
+
+<li>Integrated customer's in-house software and third party software
+with CD-adapco's state of the art solvers.</li>
+
+<li>Developed custom purpose-built numerical models.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org803acd5" class="outline-3">
+<h3 id="org803acd5"><a href="http://ucdavis.edu/">University of California, Davis</a></h3>
+<div class="outline-text-3" id="text-org803acd5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Postdoctoral Researcher</b></td>
+<td class="org-left">Center for Computational Science and Engineering</td>
+<td class="org-right">2005-2006</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Lecturer</b></td>
+<td class="org-left">Mechanical and Aerospace Engineering Department</td>
+<td class="org-right">2005-2006</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Conducted research regarding the numerical simulation of multiphase
+fluid flow with applications in materials processing, fire
+suppression and contagion spreading.</li>
+
+<li>Supervised graduate and undergraduate research.</li>
+
+<li>Taught introductory courses in thermodynamics and fluid dynamics.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org69d00a2" class="outline-3">
+<h3 id="org69d00a2"><a href="http://www.lanl.gov">Los Alamos National Laboratory</a></h3>
+<div class="outline-text-3" id="text-org69d00a2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Graduate Research Assistant</b></td>
+<td class="org-left">Computational and Computer Science Division</td>
+<td class="org-right">2000-2001</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Worked with a team on the development of a large-scale multi-physics
+solver for the numerical simulation of casting process.</li>
+
+<li>Conducted research targeting the elimination of grid induced anisotropy.</li>
+
+<li>Conducted research targeting the reduction of numerically induced
+spurious currents related to the numerical treatment of fluid
+interfaces.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgde44a75" class="outline-3">
+<h3 id="orgde44a75">Colorado School of Mines</h3>
+<div class="outline-text-3" id="text-orgde44a75">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Postdoctoral Researcher</b></td>
+<td class="org-left">Center for Computational Science and Engineering</td>
+<td class="org-right">2005-2006</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Lecturer</b></td>
+<td class="org-left">Mechanical and Aerospace Engineering Department</td>
+<td class="org-right">2005-2006</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Creation of analytical and numerical models in support of the
+development of a spray based strip casting process in partnership with
+the University of California, Irvine and the Idaho National
+Laboratory, including two and three-dimensional interfacial flow
+solvers with heat transfer and phase change (solidification), an
+analytical model for oblique droplet impact, a Lagrangian spray model,
+and molecular dynamics simulation for the investigation of contact
+line dynamics.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2531e78" class="outline-2">
+<h2 id="org2531e78">Computing Skills</h2>
+<div class="outline-text-2" id="text-org2531e78">
+</div>
+<div id="outline-container-orgb4488a9" class="outline-3">
+<h3 id="orgb4488a9">Programming Languages</h3>
+<div class="outline-text-3" id="text-orgb4488a9">
+<ul class="org-ul">
+<li><b>Native Languages</b> - C++ (modern), C, Fortran (77 and recent standards)</li>
+
+<li><b>Functional Languages</b> - Racket, Scheme (R5RS, R6RS, R7RS), Common Lisp,
+Clojure,  Haskell (basic working knowledge only), OCaml, Scala (basic working knowledge only)</li>
+
+<li><b>Prototyping Languages</b> -  Mathematica, Julia, Python, MatLab / Octave</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1f9da7b" class="outline-3">
+<h3 id="org1f9da7b">Parallel Computing Frameworks/Libraries</h3>
+<div class="outline-text-3" id="text-org1f9da7b">
+<ul class="org-ul">
+<li>MPI</li>
+<li>OpenMP</li>
+<li>C++ thread support library</li>
+<li>POSIX Threads</li>
+<li>Cuda</li>
+<li>OpenCL</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8be7558" class="outline-3">
+<h3 id="org8be7558">Parallel File Systems</h3>
+<div class="outline-text-3" id="text-org8be7558">
+<ul class="org-ul">
+<li>Lustre</li>
+<li>GPFS</li>
+<li>Vast</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc6ace95" class="outline-3">
+<h3 id="orgc6ace95">Operating Systems</h3>
+<div class="outline-text-3" id="text-orgc6ace95">
+<ul class="org-ul">
+<li>Linux (many distributions)</li>
+<li>OSX</li>
+<li>Windows 10</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1bc2fc5" class="outline-2">
+<h2 id="org1bc2fc5">EDUCATION</h2>
+<div class="outline-text-2" id="text-org1bc2fc5">
+</div>
+<div id="outline-container-org64b2dc6" class="outline-3">
+<h3 id="org64b2dc6">Colorado School of Mines, Golden, CO</h3>
+<div class="outline-text-3" id="text-org64b2dc6">
+<ul class="org-ul">
+<li>Degree -  <b>Ph.D.</b> in Engineering Systems</li>
+<li>Specialty - Thermo-fluid systems</li>
+<li>Minor - Computer Science and Applied Mathematics</li>
+<li>Year - 2005</li>
+<li>Dissertation - Droplet Splash, Spread and Bounce</li>
+<li>GPA - 4.0</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3f17a9b" class="outline-3">
+<h3 id="org3f17a9b">Colorado School of Mines, Golden, CO</h3>
+<div class="outline-text-3" id="text-org3f17a9b">
+<ul class="org-ul">
+<li>Degree - <b>M.Sc.</b> in Engineering Systems | 2001 |</li>
+<li>Specialty - Thermo-fluid systems</li>
+<li>Thesis - Modeling and Numerical Simulation of Droplet Spreading and Solidification after  Impingement on a Cold Substrate</li>
+<li>GPA - 4.0</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org70f3d2a" class="outline-3">
+<h3 id="org70f3d2a">Colorado School of Mines, Golden, Co</h3>
+<div class="outline-text-3" id="text-org70f3d2a">
+<ul class="org-ul">
+<li>Degree - <b>B.Sc.</b>  Engineering</li>
+<li>Specialty - Mechanical</li>
+<li>Year - 1999</li>
+<li>GPA - 3.3</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8ba8ec4" class="outline-2">
+<h2 id="org8ba8ec4">PUBLICATIONS</h2>
+<div class="outline-text-2" id="text-org8ba8ec4">
+</div>
+<div id="outline-container-org9c1f9fb" class="outline-3">
+<h3 id="org9c1f9fb">BOOK CHAPTERS AND ARTICLES</h3>
+<div class="outline-text-3" id="text-org9c1f9fb">
+<ol class="org-ol">
+<li>J-P Delplanque, S. B. Johnson, L. L. Shaw, and Y. Zhou, Spray Deposition and coating processes, in <span class="underline">CRC Materials Processing Handbook</span> (section on Microstructure change processes), Eds. J. R. Groza, E. J. Lavernia, and J. F. Shackelford, CRC, 2006.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8e9a388" class="outline-3">
+<h3 id="org8e9a388">REFEREED ARCHIVAL PUBLICATIONS</h3>
+<div class="outline-text-3" id="text-org8e9a388">
+<ol class="org-ol">
+<li>K. M. McHugh, Y. Lin, Y. Zhou, S. B. Johnson, J.-P. Delplanque, and E. J. Lavernia, <i>Microstructure Treatment of 2124 Al</i>, Materials Science and Engineering A, Vol. 447, pp. 26-34, 2008.</li>
+
+<li>K. M. McHugh, J-P Delplanque, S. B. Johnson, E. J. Lavernia, Y. Zhou, and Y. Lin, <i>Spray Rolling Aluminum Alloy Strip</i>, Materials Science and Engineering A, Vol. 383, pp. 96- 106, 2004.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfdc74ea" class="outline-3">
+<h3 id="orgfdc74ea">CONFERENCE PAPERS AND PRESENTATIONS</h3>
+<div class="outline-text-3" id="text-orgfdc74ea">
+<ol class="org-ol">
+<li>S. B. Johnson and J.-P. Delplanque, <i>Seeking an Optimum Droplet Size Distribution for Water-Mist Fire Suppression</i>, Paper #07F-44. 2007 Fall meeting of the Western States Sections of the Combustion Institute, Livermore, CA, October 16 &amp; 17, 2007.</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Estimating Interface Curvature for Volume of Fluid Methods</i>, Euromech 479, Sheveningen, Netherlands, August 2006.</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Numerical Simulation of Parameters Influencing Droplet Rebound</i>, ILASS Americas 19th Annual Conference on Liquid Atomization and Spray Systems, Toronto, ON, Canada, May 2006.</li>
+
+<li>B. Chacon, S. B. Johnson and J.-P. Delplanque, <i>Modeling Droplet Spreading on a Solid Substrate from First Contact through Recoil with an Energy Conservation Model</i>, ILASS Americas 19 Annual Conference on Liquid Atomization and Spray Systems, Toronto, ON, Canada, May 2006.</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Resolving Droplet Splashing with Adaptive Mesh Refinement and Accurate Curvature Estimation</i>, DFD05 58th Annual Meeting Annual Meeting of the American Physical Society Division of Fluid Dynamics, November 20-22, 2005, Chicago, IL (submitted).</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Analyzing the Results of Droplet Impact Simulation by Volume of Fluid Methods: Physics or Numerical Errors?</i> ILASS Americas 18th Annual Conference on Liquid Atomization and Spray Systems, Irvine, CA, May 2005.</li>
+
+<li>A. B. Oliver, S. B. Johnson, J.-P. Delplanque and C. S. Lengsfeld, <i>Two Fluid VOF Simulation of Droplet Impact on a Liquid Pool</i>, ILASS Americas 18th Annual Conference on Liquid Atomization and Spray Systems, Irvine, CA, May 2005.</li>
+
+<li>S. B. Johnson, J-P. Delplanque, Y. Lin, Y. Zhou, E. J. Lavernia and K. M. McHugh <i>Numerical simulation and experimental characterization of a binary aluminum alloy spray - application to the spray rolling process</i>, in EPD Congress 2005 - Proceedings of Sessions and Symposia Sponsored by the Extraction and Processing Division of The Minerals, Metals and Materials Society. 2005 TMS Annual Meeting. San Francisco, CA, USA. 13-17 Feb. 2005., pp. 509-517 (2005).</li>
+
+<li>K. M. McHugh, Y. Lin, Y. Zhou, E. J. Lavernia, J.-P. Delplanque and S. B. Johnson, <i>Spray rolling aluminum strip for transportation applications</i>, in MPMD Sixth Global Innovations Proceedings. Trends in Materials and Manufacturing Technologies for Transportation Industries and Powder Metallurgy Research and Development in the Transportation Industry. Proceedings of Symposium Sponsored by the Materials Processing &amp; Manufacturing Division of TMS. 2005 TMS Annual Meeting. San Francisco, CA, USA. 13-17 Feb. 2005.</li>
+
+<li>S. B. Johnson, J.-P. Delplanque and M. Bussmann, <i>Modeling and Simulation of Metal Droplet Impact, Spreading, and Solidification on a Solid Substrate</i>, Euromech 450: Studies on Splashes a century after A. M. Worthington, Marseille, France, October 27-29, 2004.</li>
+
+<li>S. B. Johnson, S. J. Lewis and J.-P. Delplanque, <i>Droplet-Resolved Dilute Spray Evaporation Model</i>, 2004 Heat Transfer/Fluids Engineering Summer Conference, Charlotte, North Carolina, USA, July 11-15, 2004.</li>
+
+<li>K. M. McHugh, E. J. Lavernia, Y. Zhou, Y. Line, J.-P. Delplanque and S. B. Johnson, <i>Aluminum Strip Processing by Spray Rolling</i>, Proceedings of the Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 6.27-6.38, 2003.</li>
+
+<li>Y. Lin, Y. Zhou, S. B. Johnson, J.-P. Delplanque, K. M. McHugh and E. J. Lavernia, <i>On the Selection of Processing Parameters during Spray Rolling Process</i>, Proceedings of the  Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 7.17-7.30, 2003.</li>
+
+<li>S. B. Johnson, J.-P. Delplanque, Y. Lin, Y. Zhou, E. J. Lavernia and K. M. McHugh, <i>Assisting Spray Rolling Process Development and Scale-up with Modeling and Numerical Simulation</i>, Proceedings of the Second International Conference on Spray Deposition and Melt Atomization and Fifth International Conference on Spray Forming, K. Bauckhage et al. Eds., Bremen, Germany, June 22-25, Vol. 2, pp. 6.3-6.14, 2003.</li>
+
+<li>S. B. Johnson, J.-P. Delplanque, E. J. Lavernia, Y. Lin, Y. Zhou and K. M. McHugh, <i>Spray Rolling: A Novel Technique for the Production of Aluminum Strip</i>, Proceedings of ILASS Americas, 16th Annual Conference on Liquid Atomization and Spray Systems, Monterey, California, May 18-21, 2003.</li>
+
+<li>K. M. McHugh, E. J. Lavernia, Y. Zhou, Y. Lin, J.-P. Delplanque and S. B. Johnson, <i>Spray Rolling Aluminum Strip&#x2013;Process Development and Strip Properties</i>, Symposium on Hot Deformation of Aluminum Alloys, 132nd Annual Meeting &amp; Exhibition of TMS, San Diego, California, March 2-6, 2003.</li>
+
+<li>S. B. Johnson, J.-P. Delplanque, E. J. Lavernia, Y. Zhou, Y. Lin and K. M. McHugh, <i>Spray Rolling Aluminum Strip: Process Modeling and Parametric Studies</i>, Symposium on Hot Deformation of Aluminum Alloys, 132nd Annual Meeting &amp; Exhibition of TMS, San Diego, California, March 2-6, 2003.</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Simulation Needs in the Modeling of Droplet-Based Processes: The case of spray-rolling</i>, Presented at the Los Alamos National Laboratory Telluride Workshop, Santa Fe, NM, January 21-23, 2003. 
+
+<ol class="org-ol">
+<li>J.-P. Delplanque and S. B. Johnson, Y. Lin, Y. Zhou, N. Yang, K. M. McHugh and E. J. Lavernia, <i>Using CFD Simulations to Improve Spray-Based Materials Processes</i>, 2002 International Conference on Process Modeling in Powder Metallurgy &amp; Particulate Materials, October 28-29, 2002, Newport Beach, California .</li>
+</ol></li>
+
+<li>S. B. Johnson, Y. Lin, Y. Zhou, J.-P. Delplanque, K. M. McHugh, and E. J. Lavernia, <i>Modeling and Simulation of the Spray Rolling Process</i>, 2002 International Conference on Process Modeling in Powder Metallurgy &amp; Particulate Materials, October 28-29, 2002, Newport Beach, California.</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Modeling the Spray-Rolling Process: from droplets to spray</i>, 39th Annual Technical Meeting of the Society of Engineering Science, Penn State University, PA, October 13-16th, 2002.</li>
+
+<li>S. B. Johnson and J.-P. Delplanque, <i>Micro-Scale Aspects of Spray Deposition Processing: A semi-Analytical Model for Droplet Spreading and Solidification at Off-Normal Impact Angles</i>, 2000 ASME IMECE, November 5-10, 2000 Orlando, FL, session on Transport Phenomena in Spray and Coating Processes HTD-Vol. 366-3, Proceedings of the ASME Heat Transfer Division, Vol. 3, pp. 381-271-388, ASME 2000.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org81839d5" class="outline-3">
+<h3 id="org81839d5">Other Publications</h3>
+<div class="outline-text-3" id="text-org81839d5">
+<ol class="org-ol">
+<li>S. B. Johnson, <span class="underline">Droplet Spread, Rebound and Splash</span>, Ph. D. Dissertation, Colorado School of Mines, Engineering Division, 2005.</li>
+
+<li>S. B. Johnson, <span class="underline">Modeling and Numerical Simulation of Droplet Spreading and Solidification after Impinging on a Solid Substrate</span>, Master of Science Thesis, Colorado School of Mines, Engineering Division, 2005.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgffa0e93" class="outline-3">
+<h3 id="orgffa0e93">Patents</h3>
+<div class="outline-text-3" id="text-orgffa0e93">
+<ol class="org-ol">
+<li>S. Madasu and Samuel B. Johnson. <i>Evaluating Fluid Flow in a Wellbore</i>. Halliburton Energy Services, Inc., assignee. Patent US 20130346035 A1. 26 Dec. 2013.</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org34b84f3" class="outline-3">
+<h3 id="org34b84f3">Pending Patent Applications</h3>
+<div class="outline-text-3" id="text-org34b84f3">
+<ol class="org-ol">
+<li>S. B. Johnson, A. Lin, D. M. Copeland. <i>Preconditioning a Global Model of a Subterranean Region</i>. Halliburton Energy Services, Inc., assignee. Application 14/144/113, 30 Dec. 2013.</li>
+
+<li>S. B. Johnson, A. Lin, D. M. Copeland. <i>Preconditioning Distinct Subsystem Models in a Subterranean Region Model</i>, Halliburton Energy Services, Inc., assignee. Application 14/144,129, 30 Dec. 2013.</li>
+
+<li>J. Bai, S. B. Johnson, H.G. Walters. <i>Modeling Subterranean Rock Blocks In An Injection Treatment Simulation</i>, Halliburton Energy Services, Inc., assignee.  Application 13/757,306, 1 Feb. 2013.</li>
+
+<li>S. B. Johnson, H. G. Walters. <i>Simulating an Injection Treatment of a Subterranean Zone</i>, Halliburton Energy Services, Inc., assignee. Application 13/757,052, 1 Feb. 2013.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2024-04-07 Sun 09:32</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
