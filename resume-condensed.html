@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-04-07 Sun 21:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Samuel B. Johnson, Ph.D.</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="resume.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Samuel B. Johnson, Ph.D.</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Houston, TX</td>
+<td class="org-right">631.944.2665</td>
+<td class="org-left"><a href="mailto:samuel.johnson.jobs@gmail.com">samuel.johnson.jobs@gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-orgbbef9d0" class="outline-2">
+<h2 id="orgbbef9d0">Professional Summary</h2>
+<div class="outline-text-2" id="text-orgbbef9d0">
+<p>
+As a seasoned software developer and computational scientist, I
+specialize in developing performance-critical software for
+low-latency, high-performance, and high-throughput applications. With
+decades of experience working on both sides of the research and software
+development divide, I possess a distinctive capability to tackle complex
+challenges that span these domains. My expertise is particularly
+deep in numerical analysis, which is often a fundamental component
+in performance critical problems. My unique blend of experience and
+skills enables me to effectively address issues throughout the
+research-development spectrum, ensuring comprehensive solutions.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51df5c6" class="outline-2">
+<h2 id="org51df5c6">Work History</h2>
+<div class="outline-text-2" id="text-org51df5c6">
+</div>
+<div id="outline-container-org77b92fc" class="outline-3">
+<h3 id="org77b92fc"><a href="https://www.quantlab.com">Quantlab</a></h3>
+<div class="outline-text-3" id="text-org77b92fc">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-left">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Software Developer</b></td>
+<td class="org-left">Core Research</td>
+<td class="org-left">2024 - Present</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Software Developer</b></td>
+<td class="org-left">Futures Engineering/Alpha-Recon</td>
+<td class="org-left">2023 - 2024</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Software Developer</b></td>
+<td class="org-left">Engineering Modeling and Simulation</td>
+<td class="org-left">2022 - 2023</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Software Developer</b></td>
+<td class="org-left">HPC/Edge-Dev</td>
+<td class="org-left">2021 - 2022</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Integrated ML frameworks into the trading platform, showcasing deep
+learning models for limit order book analysis with the Core
+Research team.</li>
+
+<li>Refined the trading platform's model engine for enhanced accuracy
+and optimization visibility with the Futures Engineering/Alpha
+Recon team.</li>
+
+<li>Implemented low-latency feed handlers and adapters for multiple
+financial exchanges.</li>
+
+<li>Developed data processing pipelines and a unique transformation
+application using Python, C++, and Racket.</li>
+
+<li>Authored a Python library for efficient data operations, tripling
+model fitting efficiency and achieving 600 GB/s peak read rates.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org58052e6" class="outline-3">
+<h3 id="org58052e6"><a href="https://www.exxonmobil.com">ExxonMobil</a></h3>
+<div class="outline-text-3" id="text-org58052e6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Computational Fluids Scientist</b></td>
+<td class="org-left">Upstream Integrated Solutions</td>
+<td class="org-right">2020-2021</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Andvanced HPC Developer</b></td>
+<td class="org-left">High Performance Computing</td>
+<td class="org-right">2016-2019</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Engineered a C++ static reflection library enabling automatic interfacing
+of C++ applications with Python and Matlab, facilitating seamless
+integration and enhancing cross-platform functionality.</li>
+
+<li>Developed a cutting-edge modeling and simulation abstraction system
+alongside a declarative domain-specific language (DSL) for partial
+differential equations (PDEs) and stencil computations, utilizing
+<a href="https://clang.llvm.org/">Clang/LLVM</a> and <a href="https://racket-lang.org/">Racket</a>.</li>
+
+<li>Pioneered software solutions for simulating turbidity currents,
+significantly advancing understanding of process stratigraphy.</li>
+
+<li>Created a novel vectorization strategy that resolved the contention
+between the vectorization and data locality, markedly improving
+computational efficiency.</li>
+
+<li>Led comprehensive analysis and optimization of proprietary seismic
+imaging and inversion software, enhancing the utilization of the
+HPC systems.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5d6745b" class="outline-3">
+<h3 id="org5d6745b"><a href="http://www.halliburton.com">Halliburton Energy Services, Inc</a></h3>
+<div class="outline-text-3" id="text-org5d6745b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Technical Advisor</b></td>
+<td class="org-left">Advanced Computational Sciences</td>
+<td class="org-right">2015</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Technical Advisor</b></td>
+<td class="org-left">Software Architecture &amp; Design Team</td>
+<td class="org-right">2012-2014</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Principal Technical Professional</b></td>
+<td class="org-left">Engineering Modeling and Simulation</td>
+<td class="org-right">2010-2012</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Led the design of a modular simulation system for complex physics,
+enabling scalable development and significantly enhancing system
+maintainability and evolability</li>
+
+<li>Developed and optimized mathematical models for simulating advanced
+physical processes, including hydraulic fracturing, and created
+tools for algorithmic improvements and automatic differentiation.</li>
+
+<li>Achieved groundbreaking reductions in processing times and memory
+usage through algorithm optimization, parallelization, and system
+tuning on pre-existing software.</li>
+
+<li>Formulated best practices for scientific software development,
+promoting rigorous review processes and enhancing organizational
+standards in computational science.</li>
+
+<li>Applied text mining and NLP techniques to bolster data analytics
+for well stimulation effectiveness, driving insights from
+unstructured data.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1073d6c" class="outline-3">
+<h3 id="org1073d6c"><a href="http://www.cd-adapco.com/">Analysis and Design Applications Company (CD-adapco)</a></h3>
+<div class="outline-text-3" id="text-org1073d6c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Lead Engineer</b></td>
+<td class="org-left">Engineering Services</td>
+<td class="org-right">2007-2010</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Senior Engineer</b></td>
+<td class="org-left">Engineering Services</td>
+<td class="org-right">2006-2007</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Delivered expert consulting services in thermal and fluid analysis
+across pivotal sectors, including automotive, marine, nuclear, and
+oil &amp; gas. Utilized CD-adapco's cutting-edge software and leveraged
+a variety of high-performance computing clusters to address and
+solve complex engineering challenges.</li>
+
+<li>Spearheaded the integration of client-specific and third-party
+software solutions with CD-adapco's advanced solvers, enhancing
+client's tool interoperability and computational capabilities.</li>
+
+<li>Engineered bespoke numerical models tailored to specific project
+requirements using C++ and Fortran as dictated by client needs.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5850bf7" class="outline-3">
+<h3 id="org5850bf7"><a href="http://ucdavis.edu/">University of California, Davis</a></h3>
+<div class="outline-text-3" id="text-org5850bf7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Postdoctoral Researcher</b></td>
+<td class="org-left">Center for Computational Science and Engineering</td>
+<td class="org-right">2005-2006</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Lecturer</b></td>
+<td class="org-left">Mechanical and Aerospace Engineering Department</td>
+<td class="org-right">2005-2006</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>As a postdoctoral researcher, spearheaded multiphase fluid flow
+simulations for various applications and mentored undergraduates in
+related research.</li>
+
+<li>As a lecturer, effectively taught thermodynamics and fluid
+dynamics, employing innovative teaching strategies to facilitate
+student learning.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org06e3147" class="outline-3">
+<h3 id="org06e3147"><a href="http://www.lanl.gov">Los Alamos National Laboratory</a></h3>
+<div class="outline-text-3" id="text-org06e3147">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Graduate Research Assistant</b></td>
+<td class="org-left">Computational and Computer Science Division</td>
+<td class="org-right">2000-2001</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Collaborated on developing a solver for casting process
+simulations, integrating multi-physics models for enhanced
+accuracy.</li>
+
+<li>Led research to eliminate grid-induced anisotropy and reduce
+spurious currents in fluid interface treatments, improving
+simulation reliability.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f18134" class="outline-3">
+<h3 id="org4f18134"><a href="https://www.mines.edu/">Colorado School of Mines</a></h3>
+<div class="outline-text-3" id="text-org4f18134">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Organization</th>
+<th scope="col" class="org-right">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Doctoral Fellow</b></td>
+<td class="org-left">Center for Combustion and Environmental Science</td>
+<td class="org-right">2001-2005</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Research Assistant</b></td>
+<td class="org-left">Center for Combustion and Environmental Science</td>
+<td class="org-right">1999-2001</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Collaborated with the University of California, Irvine, and Idaho
+National Laboratory on pioneering spray-based strip casting process
+development. Contributions included:
+</p>
+
+<ul class="org-ul">
+<li>Advanced 2D and 3D flow solvers for heat transfer and
+solidification.</li>
+
+<li>Analytical model for oblique droplet impact and a Lagrangian spray
+model.</li>
+
+<li>Molecular dynamics simulations for contact line dynamics research.</li>
+</ul>
+
+<p>
+This effort enhanced predictive modeling and understanding of the
+strip casting process.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7cbd790" class="outline-2">
+<h2 id="org7cbd790">Computing Skills</h2>
+<div class="outline-text-2" id="text-org7cbd790">
+</div>
+<div id="outline-container-org287def1" class="outline-3">
+<h3 id="org287def1">Programming Languages</h3>
+<div class="outline-text-3" id="text-org287def1">
+<dl class="org-dl">
+<dt>Native Languages</dt><dd>- C++ (modern), C, Fortran (77 and recent standards)</dd>
+
+<dt>Functional Languages</dt><dd>Racket, Scheme (R5RS, R6RS, R7RS), Common Lisp,
+Clojure,  Haskell (basic working knowledge only), OCaml, Scala (basic working knowledge only)</dd>
+
+<dt>Prototyping Languages</dt><dd>Mathematica, Julia, Python, MatLab/Octave</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org9c4999d" class="outline-3">
+<h3 id="org9c4999d">Machine Learning Frameworks and Libraries</h3>
+<div class="outline-text-3" id="text-org9c4999d">
+<ul class="org-ul">
+<li>PyTorch</li>
+<li>TensorFlow</li>
+<li>LightGBM</li>
+<li>Scikit-Learn</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org10367d8" class="outline-3">
+<h3 id="org10367d8">Containerization</h3>
+<div class="outline-text-3" id="text-org10367d8">
+<ul class="org-ul">
+<li>Docker</li>
+<li>Singularity (Apptainer)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd508faf" class="outline-3">
+<h3 id="orgd508faf">Parallel Computing Frameworks and libraries</h3>
+<div class="outline-text-3" id="text-orgd508faf">
+<ul class="org-ul">
+<li>MPI</li>
+<li>OpenMP</li>
+<li>C++ thread support library</li>
+<li>POSIX Threads</li>
+<li>CUDA</li>
+<li>OpenCL</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7a72f3b" class="outline-3">
+<h3 id="org7a72f3b">Parallel File Systems</h3>
+<div class="outline-text-3" id="text-org7a72f3b">
+<ul class="org-ul">
+<li>Lustre</li>
+<li>GPFS</li>
+<li>Vast</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb003c8d" class="outline-3">
+<h3 id="orgb003c8d">Operating Systems</h3>
+<div class="outline-text-3" id="text-orgb003c8d">
+<ul class="org-ul">
+<li>Linux (many distributions)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgeebea0e" class="outline-2">
+<h2 id="orgeebea0e">EDUCATION</h2>
+<div class="outline-text-2" id="text-orgeebea0e">
+</div>
+<div id="outline-container-orge164f18" class="outline-3">
+<h3 id="orge164f18">Colorado School of Mines, Golden, CO</h3>
+<div class="outline-text-3" id="text-orge164f18">
+<ul class="org-ul">
+<li>Degree -  <b>Ph.D.</b> in Engineering Systems</li>
+<li>Specialty - Thermo-fluid systems</li>
+<li>Minor - Computer Science and Applied Mathematics</li>
+<li>Year - 2005</li>
+<li>Dissertation - Droplet Splash, Spread and Bounce</li>
+<li>GPA - 4.0</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6601662" class="outline-3">
+<h3 id="org6601662">Colorado School of Mines, Golden, CO</h3>
+<div class="outline-text-3" id="text-org6601662">
+<ul class="org-ul">
+<li>Degree - <b>M.Sc.</b> in Engineering Systems | 2001 |</li>
+<li>Specialty - Thermo-fluid systems</li>
+<li>Thesis - Modeling and Numerical Simulation of Droplet Spreading and Solidification after  Impingement on a Cold Substrate</li>
+<li>GPA - 4.0</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org245637c" class="outline-3">
+<h3 id="org245637c">Colorado School of Mines, Golden, Co</h3>
+<div class="outline-text-3" id="text-org245637c">
+<ul class="org-ul">
+<li>Degree - <b>B.Sc.</b>  Engineering</li>
+<li>Specialty - Mechanical</li>
+<li>Year - 1999</li>
+<li>GPA - 3.3</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2024-04-07 Sun 21:05</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
